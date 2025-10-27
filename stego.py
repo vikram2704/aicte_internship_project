@@ -2,7 +2,7 @@ import cv2
 import os
 import string
 
-img = cv2.imread("apple-scab-1-920x518.jpg") # Replace with the correct image path
+img = cv2.imread("apple-scab-1-920x518.jpg")
 
 msg = input("Enter secret message:")
 password = input("Enter a passcode:")
@@ -25,8 +25,7 @@ for i in range(len(msg)):
     z = (z + 1) % 3
 
 cv2.imwrite("encryptedImage.jpg", img)
-os.system("start encryptedImage.jpg")  # Use 'start' to open the image on Windows
-
+os.system("start encryptedImage.jpg") 
 message = ""
 n = 0
 m = 0
